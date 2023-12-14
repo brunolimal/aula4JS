@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+//Calculadora de Média
+
+function obterEntradaUsuario() {
+    var numero1 = parseFloat(prompt("Digite o primeiro número:"));
+    var numero2 = parseFloat(prompt("Digite o segundo número:"));
+    var numero3 = parseFloat(prompt("Digite o terceiro número:"));
+
+    return [numero1, numero2, numero3];
+}
+
+function calcularMedia(numero1, numero2, numero3) {
+    return (numero1 + numero2 + numero3) / 3;
+}
+
+function exibirResultado(media) {
+    alert ("A média dos três números digitados é: " + media);
+}
+
+var numeros = obterEntradaUsuario();
+var media = calcularMedia(numeros[0], numeros[1], numeros[2]);
+exibirResultado(media);
+</script>
